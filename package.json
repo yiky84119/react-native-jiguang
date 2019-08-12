@@ -1,6 +1,6 @@
 {
   "name": "react-native-jiguang",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Jiguang Library for React Native apps.",
   "main": "index.js",
   "scripts": {

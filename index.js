@@ -1,4 +1,4 @@
-import { NativeModules } from "react-native";
+import { NativeModules, DeviceEventEmitter } from "react-native";
 
 const JPushModule = NativeModules.JPushModule
 const JAnalyticsModule = NativeModules.JAnalyticsModule;
