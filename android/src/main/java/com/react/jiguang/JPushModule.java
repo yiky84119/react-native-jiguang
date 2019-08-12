@@ -41,12 +41,12 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
+import cn.jiguang.analytics.android.api.JAnalyticsInterface;
 import cn.jpush.android.api.BasicPushNotificationBuilder;
 import cn.jpush.android.api.CustomPushNotificationBuilder;
 import cn.jpush.android.api.JPushInterface;
 import cn.jpush.android.api.JPushMessage;
 import cn.jpush.android.data.JPushLocalNotification;
-import cn.jpush.android.service.JCommonService;
 import cn.jpush.android.service.JPushMessageReceiver;
 
 public class JPushModule extends ReactContextBaseJavaModule implements LifecycleEventListener {
@@ -73,6 +73,7 @@ public class JPushModule extends ReactContextBaseJavaModule implements Lifecycle
     public JPushModule(ReactApplicationContext reactContext) {
         super(reactContext);
         reactContext.addLifecycleEventListener(this);
+        JAnalyticsInterface.init(reactContext);
     }
 
     @Override
