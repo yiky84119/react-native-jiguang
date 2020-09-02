@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'React'
 
-  s.dependency 'JPush', '3.2.2-noidfa'
-  s.dependency 'JAnalytics', '2.1.0'
+  s.dependency 'JCore', '2.1.4-noidfa'    
+  s.dependency 'JPush', '3.2.6'
+  s.dependency 'JAnalytics', '2.1.2'
 end
